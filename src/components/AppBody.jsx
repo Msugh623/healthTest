@@ -5,7 +5,7 @@ import ViewPort from './ViewPort'
 
 const AppBody = () => {
   return (
-    <div>
+    <div >
       <Nav />
       <div className="d-flex">
         <Sidebar />

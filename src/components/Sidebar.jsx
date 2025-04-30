@@ -24,9 +24,15 @@ const Sidebar = () => {
             <img src="/lens.svg" width={"17px"} alt="" className="img-fluid" />
           </span>
         </div>
-        <div className="pt-1">
+        <div className="pt-1 pe-1">
           {patients?.length ? (
-            <>
+            <div
+              style={{
+                maxHeight: "90vh",
+                height: "90vh",
+                overflow: "auto",
+              }}
+            >
               {patients.map((pat, index) => (
                 <div
                   onClick={() => setThePatient(pat)}
@@ -81,7 +87,7 @@ const Sidebar = () => {
                   </div>
                 </div>
               ))}
-            </>
+            </div>
           ) : (
             <>
               <div className="text-center">No Data</div>

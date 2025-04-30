@@ -1,7 +1,6 @@
 import React, { createContext, useContext, useEffect, useState } from "react";
 import api from "../../api/api";
 import { dataLocal } from "../assets/localData";
-import { IoReturnDownForwardOutline } from "react-icons/io5";
 
 const context = createContext();
 
@@ -11,7 +10,7 @@ const Statecontext = ({ children }) => {
   const [thePatient, setThePatient] = useState({});
   const [chartData, setChartData] = useState([]);
   const [vitals, setVitals] = useState([]);
-
+    
   async function getData() {
     setFetchStat(true);
     try {

@@ -4,7 +4,9 @@ import AppBody from "./components/AppBody";
 
 const Layout = () => {
   return (
-    <main className="main">
+    <main className="main" style={{
+          minWidth:'940px'
+        }}>
       <Routes>
         <Route path="/" element={<AppBody />} />
       </Routes>
